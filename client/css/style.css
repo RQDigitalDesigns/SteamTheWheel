@@ -1,0 +1,146 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+a,
+input {
+    font-family: 'Open Sans';
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: white;
+}
+
+a:not(.fa-github) {
+    font-family: 'Open Sans';
+    font-size: 16px;
+    color: white;
+}
+
+
+a.greenhover:link {
+    color: #fff;
+    line-height: 60px;
+}
+
+a.greenhover:hover {
+    color: #4aa172;
+    transition: all ease-in-out 0.4s;
+    -webkit-transition: all ease-in-out 0.4s;
+    -moz-transition: all ease-in-out 0.4s;
+    -o-transition: all ease-in-out 0.4s;
+    text-decoration: none;
+}
+
+a.greenhover:active {
+    color: #fff;
+}
+
+input {
+    color: #4aa172;
+    width: auto;
+    border: 1px solid #4aa172;
+    background-color: transparent;
+    padding: 5px;
+    margin: 6px 0 0 0;
+}
+
+.alert-warning {
+    color: #4aa172;
+    text-shadow: #4aa172 2px 2px 8px, #838689 2px 2px 8px;
+    background-color: transparent;
+    border:  none;
+}
+
+.alert-success {
+    color: #4aa172;
+    text-shadow: #4aa172 2px 2px 1px, #838689 2px 2px 10px;
+    background-color: transparent;
+    border:  none;
+}
+
+pre {
+    width: 35%;
+    height: 20%;
+    padding: 0 0 0 5px;
+    font-size: 10px;
+    background-color: transparent;
+    color: #4aa172;
+    border: 1px solid #4aa172;
+    border-radius: 1px !important;
+    font-weight: 700;
+}
+
+.rowspace {
+    width: auto;
+    height: 20px;
+    background-color: transparent;
+}
+
+
+
+body {
+    background-color: #363636;
+    padding-top: 60px;
+    color: #fff;
+}
+
+footer {
+    margin: 50px 0 0 0;
+    padding: 0 0 0 70px;
+    position: fixed;
+}
+
+
+.redBtn {
+    color: #4aa172;
+    background-color: transparent;
+    border:2px solid #4aa172;
+    margin: 20px 0 20px 0;
+    padding: 10px;
+    font-weight: 700;
+    width: auto;
+    height: auto;
+    font-size: 12px;
+}
+
+
+
+.redBtnSm {
+    color: #4aa172;
+    background-color: transparent;
+    border:2px solid #4aa172;
+    margin: 5px 0 20px 0;
+    padding: 10px;
+    font-weight: 700;
+    width: auto;
+    height: auto;
+    font-size: 12px;
+}
+
+.darkPre {
+    background-color: #363636;
+    border: none;
+}
+
+.lightBtn{
+    background-color: #e5e5e5;
+    color: #363636;
+}
+
+.mgleft {
+    margin-left: 70px;
+}

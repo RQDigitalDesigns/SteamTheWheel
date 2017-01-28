@@ -1,0 +1,1 @@
+{"filter":false,"title":"[P] /client/js/main.js","undoManager":{"mark":-1,"position":-1,"stack":[]},"preview":{"path":"/client/js/main.js","previewer":"preview.browser"},"timestamp":1485559685379,"hash":"da39a3ee5e6b4b0d3255bfef95601890afd80709"}

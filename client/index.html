@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en" ng-app>
+
+<head>
+  <title>Chat Example</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/style.css" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<!--writing html is the future? Elm is the future.-->
+
+<body>
+  <div id="steam">
+    <div class="container">
+
+      <div class="col-lg-12">
+        <h1>Steam The Wheel!</h1>
+        <div class="row">
+          <div class="col-lg-12">
+            <i class="fa fa-cog fa-spin fa-3x fa-fw"></i>
+            <br/>
+        <h6>Pick a random game in your steam library, because your not sure which game to play :)</h6>
+          </div>
+        </div>
+        <div class="rowspace"></div>
+        <!--<div class=""-->
+        <div class="dropdown">
+          <button class="btn lightBtn dropdown-toggle" type="button" data-toggle="dropdown">Select Profile Type
+        <span class="caret"></span></button>
+          <br/>
+          <br/>
+          <ul class="dropdown-menu">
+            <li><a @click="profilePreIDFn" href="#">ID</a></li>
+            <li><a @click="profilePreProfileFn" href="#">Profile</a></li>
+            <!-- i defined {{ steamProfile }} -->
+          </ul>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="row">
+          <div class="col-lg-12">
+            <h3 class="alert alert-success" v-if="LoadingLabel">{{success}}</h3>
+            <h3 class="alert alert-warning" v-else>{{fail}}</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Profile Type Input/Placeholder -->
+    <div class="row">
+      <div class="col-lg-12 mgleft">
+    <div v-if="profileIDPre">
+      <pre>http://steamcommunity.com/id/<span style="font-size: 2em">bzrk501</span>/</pre>
+    </div>
+    <div v-if="profilePre">
+      <pre>http://steamcommunity.com/profiles/<span style="font-size: 2em">76561197985405022</span>/</pre>
+    </div>
+    <div v-if="profilePreInput">
+      <label> 
+      <input class="steamID" type="text" v-model="steamID"></input>
+    </label>
+      <br/>
+      <button class="redBtn" @click="getSteamGames(steamProfile, steamID)" type="submit">Get Steam Games</button>
+      <br/>
+      <div>
+        <button class="redBtnSm" @click="randomGame()">Generate Random Game</button>
+        <h4>{{SteamGame}}</h4>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+  </div>
+  </div>
+  <!-- End Profile Type Input/Placeholder -->
+  </div>
+</body>
+
+<footer class="footer ftlg">
+  <div class="row">
+    <div class="col-lg-12">
+      <h4>Follow Us On GitHub</h4>
+      <a href="https://github.com/teachtyler" target="_blank"><i class="fa fa-2x fa-github"></i></a><a class="greenhover" href="https://github.com/teachtyler" target="_blank">&nbsp;&nbsp;TeachTyler
+      </a>
+      <br/>
+      <a href="https://github.com/drazyhaze" target="_blank"><i class="fa fa-2x fa-github"></i></a><a class="greenhover" href="http://github.com/drazyhaze" target="_blank">&nbsp;&nbsp;DrazyHaze</a>
+      <br/>
+      <a href="https://github.com/zcassini" target="_blank"><i class="fa fa-2x fa-github"></i></a><a class="greenhover" href="http://github.com/zcassini" target="_blank">&nbsp;&nbsp;zcassini</a>
+    </div>
+  </div>
+</footer>
+
+</html>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+<script src="https://unpkg.com/vue/dist/vue.js"></script>
+<script src="/js/main.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+
+</html>

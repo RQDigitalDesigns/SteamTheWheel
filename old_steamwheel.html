@@ -1,0 +1,20 @@
+    
+        <h1>Steam the Wheel!</h1>
+        
+        <label>  Put in your Steam community ID  
+        <pre>http://steamcommunity.com/id/<span style="font-size: 2em">bzrk501</span>/</pre>
+          <input type="text" ng-model="steamID" />
+          <button class="btn btn-secondary" ng-click="getSteamGames(steamID)">Get Steam Games</button>
+             <span v-if="LoadingLabel">
+               {{success}}
+             </span>
+             <span v-if="!LoadingLabel">
+               {{fail}}
+             </span>
+        </label>
+            <p>
+              <button class="btn btn-primary" ng-click="randomGame()">Random Game</button>
+            </p>
+            <pre>{{SteamGame}}</pre>
+      </div>
+     
